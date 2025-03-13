@@ -5,11 +5,11 @@ import requests
 app = Flask(__name__)
 
 # 設定您的 LINE Channel Token 和 Channel Secret
-LINE_CHANNEL_TOKEN = '0NtOIZT6BCuu8HtgfNS8Ui8KuQ53kQtoD9fNrUHYNulJQhEGCYU5Mmv7qEQ39DQSfKn3SFTxOkjD0EJGHTCPpBuTsG1lgteeYQd1m45uCMBRmyeSmAqaIfJXtvzg8x41MlYyDdWmTY+5aQwsCrbV2QdB04t89/1O/w1cDnyilFU='
-LINE_CHANNEL_SECRET = '44632ff3d25949555d3df578fe111183'
+LINE_CHANNEL_TOKEN = 'YOUR_CHANNEL_TOKEN'
+LINE_CHANNEL_SECRET = 'YOUR_CHANNEL_SECRET'
 
 # 設定您的 Gemini API 金鑰
-genai.configure(api_key="AIzaSyCadljClyECVRXh1gqsJXEgTAZivl1QwbY")
+genai.configure(api_key="YOUR_API_KEY")
 
 @app.route('/callback', methods=['POST'])
 def callback():
